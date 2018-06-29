@@ -375,3 +375,148 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 21ms (Views: 8.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-06-29 12:21:22 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/harsha/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/harsha/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/harsha/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 17ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-06-29 12:21:25 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages/home" for 127.0.0.1 at 2018-06-29 12:21:33 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 249ms (Views: 246.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2018-06-29 12:34:11 +0530
+  [1m[35m (7.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/harsha/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 201ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  }": expected "}", was ""):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/pages.scss:321
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__4092112230638894774_70192867254480'
+Started GET "/pages/home" for 127.0.0.1 at 2018-06-29 12:35:02 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 123ms (Views: 121.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2018-06-29 12:43:10 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-29 12:43:41 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/harsha/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/harsha/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 10ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/harsha_blogs" for 127.0.0.1 at 2018-06-29 12:43:47 +0530
+Processing by HarshaBlogsController#index as HTML
+  Rendering harsha_blogs/index.html.erb within layouts/application
+  [1m[36mHarshaBlog Load (25.0ms)[0m  [1m[34mSELECT "harsha_blogs".* FROM "harsha_blogs"[0m
+  ↳ app/views/harsha_blogs/index.html.erb:15
+  Rendered harsha_blogs/index.html.erb within layouts/application (54.2ms)
+Completed 200 OK in 72ms (Views: 22.5ms | ActiveRecord: 46.6ms)
+
+
+Started GET "/harsha_blogs/new" for 127.0.0.1 at 2018-06-29 12:43:56 +0530
+Processing by HarshaBlogsController#new as HTML
+  Rendering harsha_blogs/new.html.erb within layouts/application
+  Rendered harsha_blogs/_form.html.erb (14.0ms)
+  Rendered harsha_blogs/new.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 46ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/harsha_blogs" for 127.0.0.1 at 2018-06-29 12:44:03 +0530
+Processing by HarshaBlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yFeFVKjhAYrYunkKFQuFg8BkhGWy47udplKUsHGNANGwc2dHd+P+QUT1J1ypcoOX2LQmG1lX2OlL1FCNbDSogg==", "harsha_blog"=>{"title"=>"second", "body"=>"dcdcd"}, "commit"=>"Create Harsha blog"}
+  [1m[35m (11.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/harsha_blogs_controller.rb:30
+  [1m[36mHarshaBlog Create (24.2ms)[0m  [1m[32mINSERT INTO "harsha_blogs" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "second"], ["body", "dcdcd"], ["created_at", "2018-06-29 07:14:03.554352"], ["updated_at", "2018-06-29 07:14:03.554352"]]
+  ↳ app/controllers/harsha_blogs_controller.rb:30
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/harsha_blogs_controller.rb:30
+Redirected to http://localhost:3000/harsha_blogs/2
+Completed 302 Found in 43ms (ActiveRecord: 37.6ms)
+
+
+Started GET "/harsha_blogs/2" for 127.0.0.1 at 2018-06-29 12:44:03 +0530
+Processing by HarshaBlogsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHarshaBlog Load (5.8ms)[0m  [1m[34mSELECT  "harsha_blogs".* FROM "harsha_blogs" WHERE "harsha_blogs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/harsha_blogs_controller.rb:67
+  Rendering harsha_blogs/show.html.erb within layouts/application
+  Rendered harsha_blogs/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 46ms (Views: 25.6ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2018-06-29 12:44:11 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2018-06-29 12:44:47 +0530
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mHarshaBlog Load (0.5ms)[0m  [1m[34mSELECT  "harsha_blogs".* FROM "harsha_blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:1
+  Rendered pages/home.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.5ms)
+
+
