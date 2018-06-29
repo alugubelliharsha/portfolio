@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Harsha Blogs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @harsha_blogs.each do |harsha_blog| %>
+      <tr>
+        <td><%= harsha_blog.title %></td>
+        <td><%= harsha_blog.body %></td>
+        <td><%= link_to 'Show', harsha_blog %></td>
+        <td><%= link_to 'Edit', edit_harsha_blog_path(harsha_blog) %></td>
+        <td><%= link_to 'Destroy', harsha_blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Harsha Blog', new_harsha_blog_path %>
